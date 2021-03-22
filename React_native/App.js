@@ -17,7 +17,7 @@ function LoginFlow() {
   return (
     <MainStack.Navigator initialRouteName="Signup">
       <MainStack.Screen name="Signin" component={SigninScreen} />
-      <MainStack.Screen name="Signup" component={SignupScreen} />
+      <MainStack.Screen name="Signup" options={{ headerShown: false }} component={SignupScreen} />
     </MainStack.Navigator>
   );
 }
